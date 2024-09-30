@@ -1,4 +1,4 @@
-public class TablaMultiplicarPares {
+public class TablaMultiplicarParesUno {
     public static void main(String[] args) {
         // Iterar a traves de los multiplicadores pares del 2 al 10
         for (int i = 2; i <= 10; i += 2) {
