@@ -14,15 +14,15 @@ public class LibretaCalificaciones {
         System.out.print("Ingresa la asignatura: ");
         asignatura = scanner.nextLine();
         
-        while (contadorNotas < 10) {
+        while (contadorNotas < 3) {
             System.out.print("Ingresa la nota " + (contadorNotas + 1) + " (entre 0 y 10): ");
             double nota = scanner.nextDouble();
             
-            if (nota >= 0 && nota <= 10) { // Para que la nota esté entre 0 y 10
-                suma += nota; // Suma la nota al total
-                contadorNotas++; // Incrementa el contador solo si la nota es válida
+            if (nota >= 0 && nota <= 10) {
+                suma += nota;
+                contadorNotas++;
             } else {
-                System.out.println("Error: La nota debe estar entre 0 y 10.");
+                System.out.println("Error, la nota debe estar entre 0 y 10");
             }
         }
         
@@ -30,14 +30,14 @@ public class LibretaCalificaciones {
         
         String resultado;
         if (promedio <= 4) {
-            resultado = "Reprobaste";
+            resultado = "reprobaste";
         } else if (promedio >= 7) {
-            resultado = "Aprobaste";
+            resultado = "aprobaste";
         } else {
-            resultado = "Suspendiste";
+            resultado = "suspendiste";
         }
         
-        System.out.println(nombre + "tu" + resultado + asignatura);
+        System.out.println(nombre + " tu " + resultado + asignatura);
 
         scanner.close();
     }
