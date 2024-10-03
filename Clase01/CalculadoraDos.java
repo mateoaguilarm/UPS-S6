@@ -8,11 +8,11 @@ public class CalculadoraDos {
         double num = scanner.nextDouble();
 
         System.out.println("Tabla de multiplicar del " + num + ":");
-        for (int i = 1; i <= 10; i ++) { // Manteniendo la secuencia de pares
+        for (int i = 1; i <= 10; i ++) { 
             double resultado = num * i;
             System.out.println(num + " x " + i + " = " + resultado);
         }
 
-        scanner.close(); // Cerramos el scanner al final
+        scanner.close(); 
     }
 }
