@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class LibretaCalificaciones {
+public class LibretaCalificacionesConFor {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String nombre, asignatura;
+        double[] notas = new double[10];
         double suma = 0, promedio;
-        int contadorNotas = 0;
         
         // Solicitar el nombre del estudiante
         System.out.print("Ingresa tu nombre: ");
@@ -16,17 +16,20 @@ public class LibretaCalificaciones {
         System.out.print("Ingresa la asignatura: ");
         asignatura = scanner.nextLine();
         
-        // Solicitar las 10 notas utilizando un ciclo while
-        while (contadorNotas < 10) {
-            System.out.print("Ingresa la nota " + (contadorNotas + 1) + " (entre 0 y 10): ");
-            double nota = scanner.nextDouble();
+        // Solicitar las 10 notas
+        for (int i = 0; i < 10; i++) {
+            double nota;
+            do {
+                System.out.print("Ingresa la nota " + (i + 1) + " (entre 0 y 10): ");
+                nota = scanner.nextDouble();
+                
+                if (nota < 0 || nota > 10) {
+                    System.out.println("Error: La nota debe estar entre 0 y 10.");
+                }
+            } while (nota < 0 || nota > 10); // Verifica que la nota esté entre 0 y 10
             
-            if (nota >= 0 && nota <= 10) { // Verifica que la nota esté entre 0 y 10
-                suma += nota; // Suma la nota al total
-                contadorNotas++; // Incrementa el contador solo si la nota es válida
-            } else {
-                System.out.println("Error: La nota debe estar entre 0 y 10.");
-            }
+            notas[i] = nota;
+            suma += nota; // Acumula las notas para calcular el promedio
         }
         
         // Calcular el promedio
