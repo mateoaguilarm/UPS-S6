@@ -8,20 +8,17 @@ public class LibretaCalificaciones {
         double suma = 0, promedio;
         int contadorNotas = 0;
         
-        // Solicitar el nombre del estudiante
         System.out.print("Ingresa tu nombre: ");
         nombre = scanner.nextLine();
         
-        // Solicitar el nombre de la asignatura
         System.out.print("Ingresa la asignatura: ");
         asignatura = scanner.nextLine();
         
-        // Solicitar las 10 notas utilizando un ciclo while
         while (contadorNotas < 10) {
             System.out.print("Ingresa la nota " + (contadorNotas + 1) + " (entre 0 y 10): ");
             double nota = scanner.nextDouble();
             
-            if (nota >= 0 && nota <= 10) { // Verifica que la nota esté entre 0 y 10
+            if (nota >= 0 && nota <= 10) { // Para que la nota esté entre 0 y 10
                 suma += nota; // Suma la nota al total
                 contadorNotas++; // Incrementa el contador solo si la nota es válida
             } else {
@@ -29,10 +26,8 @@ public class LibretaCalificaciones {
             }
         }
         
-        // Calcular el promedio
         promedio = suma / 10;
         
-        // Determinar el resultado
         String resultado;
         if (promedio <= 4) {
             resultado = "Reprobaste";
@@ -42,7 +37,8 @@ public class LibretaCalificaciones {
             resultado = "Suspendiste";
         }
         
-        // Mostrar el mensaje final
-        System.out.println(nombre + ", tú " + resultado + " la asignatura " + asignatura + ".");
+        System.out.println(nombre + "tu" + resultado + asignatura);
+
+        scanner.close();
     }
 }

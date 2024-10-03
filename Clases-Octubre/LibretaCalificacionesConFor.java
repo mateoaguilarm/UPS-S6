@@ -47,5 +47,8 @@ public class LibretaCalificacionesConFor {
         
         // Mostrar el mensaje final
         System.out.println(nombre + ", tú " + resultado + " la asignatura " + asignatura + ".");
+
+        scanner.close();
     }
+
 }
