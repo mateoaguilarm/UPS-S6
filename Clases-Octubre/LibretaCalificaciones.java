@@ -26,7 +26,7 @@ public class LibretaCalificaciones {
             }
         }
         
-        promedio = suma / 10;
+        promedio = suma / 3;
         
         String resultado;
         if (promedio <= 4) {
