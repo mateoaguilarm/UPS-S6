@@ -39,7 +39,20 @@ public class FormularioMatricula {
 
             case 7:
                 System.out.println("Te has matriculado en el septimo grado.");
+                break;
 
+            case 8:
+                System.out.println("Te has matriculado en el octavo grado.");
+                break;
+
+            case 9:
+                System.out.println("Te has matriculado en el noveno grado.");
+                break;
+
+            case 10:
+                System.out.println("Te has matriculado en el decimo grado.");
+                break;
+            
             default:
                 System.out.println("El grado ingresado no es válido.");
                 break;
@@ -55,6 +68,14 @@ public class FormularioMatricula {
         
             case "B":
                 System.out.println("Has elegido el paralelo B.");
+                break;
+
+            case "C":
+                System.out.println("Has elegido el paralelo C.");
+                break;
+
+            case "D":
+                System.out.println("Has elegido el paralelo D.");
                 break;
             
             default:
