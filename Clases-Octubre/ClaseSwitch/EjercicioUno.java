@@ -22,38 +22,74 @@ public class EjercicioUno {
 
             case 2:
                 System.out.println("Elejiste la tabla de multiplicar del 2");
+                for (int i = 1; i <= 10; i++) {
+                    double resultado = num * i;
+                    System.out.println(num + " x " + i + " = " + resultado);
+                }
                 break;
 
             case 3:
                 System.out.println("Elejiste la tabla de multiplicar del 3");
+                for (int i = 1; i <= 10; i++) {
+                    double resultado = num * i;
+                    System.out.println(num + " x " + i + " = " + resultado);
+                }
                 break;
 
             case 4:
                 System.out.println("Elejiste la tabla de multiplicar del 4");
+                for (int i = 1; i <= 10; i++) {
+                    double resultado = num * i;
+                    System.out.println(num + " x " + i + " = " + resultado);
+                }
                 break;
 
             case 5:
                 System.out.println("Elejiste la tabla de multiplicar del 5");
+                for (int i = 1; i <= 10; i++) {
+                    double resultado = num * i;
+                    System.out.println(num + " x " + i + " = " + resultado);
+                }
                 break;
 
             case 6:
                 System.out.println("Elejiste la tabla de multiplicar del 6");
+                for (int i = 1; i <= 10; i++) {
+                    double resultado = num * i;
+                    System.out.println(num + " x " + i + " = " + resultado);
+                }
                 break;
 
             case 7:
                 System.out.println("Elejiste la tabla de multiplicar del 7");
+                for (int i = 1; i <= 10; i++) {
+                    double resultado = num * i;
+                    System.out.println(num + " x " + i + " = " + resultado);
+                }
                 break;
 
             case 8:
                 System.out.println("Elejiste la tabla de multiplicar del 8");
+                for (int i = 1; i <= 10; i++) {
+                    double resultado = num * i;
+                    System.out.println(num + " x " + i + " = " + resultado);
+                }
                 break;
 
             case 9:
                 System.out.println("Elejiste la tabla de multiplicar del 9");
+                for (int i = 1; i <= 10; i++) {
+                    double resultado = num * i;
+                    System.out.println(num + " x " + i + " = " + resultado);
+                }
                 break;
 
             case 10:
                 System.out.println("Elejiste la tabla de multiplicar del 10");
+                for (int i = 1; i <= 10; i++) {
+                    double resultado = num * i;
+                    System.out.println(num + " x " + i + " = " + resultado);
+                }
                 break;
 
             default:
