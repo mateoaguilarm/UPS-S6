@@ -96,5 +96,6 @@ public class EjercicioUno {
                 System.out.println("El numero ingresado no es válido (debe ser del 1 al 10)");
                 break;
         }
+        scanner.close();
     }
 }
