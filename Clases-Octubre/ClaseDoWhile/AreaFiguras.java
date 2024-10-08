@@ -8,7 +8,7 @@ public class AreaFiguras {
         boolean continuar;
 
         do {
-            System.out.println("Elige una Figura: (1: cuadrado; 2: rectángulo; 3: triángulo)");
+            System.out.println("Elige una Figura: (1: cuadrado; 2: rectangulo; 3: triangulo)");
             int fig = scanner.nextInt();
 
             switch (fig) {
@@ -45,12 +45,12 @@ public class AreaFiguras {
                     break;
             }
 
-            System.out.println("¿Deseas calcular el área de otra figura? (true/false): ");
+            System.out.println("¿Deseas calcular el área de otra figura? Escribe (true/false): ");
             continuar = scanner.nextBoolean();
 
         } while (continuar); 
 
-        System.out.println("Gracias por usar el calculador de área. ¡Hasta luego!");
+        System.out.println("Calculadora de figuras terminado");
         scanner.close();
     }
 }
