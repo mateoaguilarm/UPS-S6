@@ -1,0 +1,58 @@
+# Ignorar archivos de macOS
+.DS_Store
+
+# Ignorar archivos de configuración de sistemas Unix
+*.swp
+*.swo
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos temporales
+*.tmp
+*.temp
+
+# Ignorar directorio node_modules (usado en proyectos JavaScript/Node.js)
+node_modules/
+
+# Ignorar archivos de compilación de Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignorar archivos de compilación de Java
+*.class
+
+# Ignorar archivos de proyectos Java y Python virtualenv
+target/
+venv/
+
+# Ignorar archivos de paquetes
+*.zip
+*.tar.gz
+*.rar
+
+# Ignorar archivos binarios y ejecutables
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.out
+
+# Ignorar carpetas de IDEs y editores de código
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignorar archivos de imágenes y gráficos temporales
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.bmp
+
+# Ignorar archivos de configuración personal
+*.env.DS_Store
