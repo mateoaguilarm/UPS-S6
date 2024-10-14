@@ -1,0 +1,304 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="en"> <!-- Comienza el elemento html y establece el idioma como inglés -->
+<head>
+   <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Indica que el contenido debe renderizarse con la última versión de IE -->
+   <!-- Se utiliza para especificar la versión de Internet Explorer que se debe utilizar para renderizar una página web -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Establece el tamaño del viewport para dispositivos móviles -->
+   <title>Café Ecuatoriano</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
+   <link rel="stylesheet" href="style.css"> <!-- Enlaza la hoja de estilos CSS externa -->
+</head>
+<body> <!-- Comienza el cuerpo del documento -->
+ 
+   <header class="header"> <!-- Define la cabecera del documento con una clase CSS -->
+ 
+       <div class="menu container"> <!-- Contenedor para el menú -->
+           <a href="#" class="logo">Paola</a> <!-- Enlace que actúa como logo -->
+           <input type="checkbox" id="menu"/> <!-- Checkbox para menú responsivo -->
+           <!-- Para que la Página Web sea responsive -->
+           <label for="menu"> <!-- Etiqueta que activa el menú al hacer clic -->
+               <img src="images/menu.png" class="menu-icono" alt=""> <!-- Icono del menú -->
+           </label>
+           <nav class="navbar"> <!-- Menú de navegación -->
+               <ul> <!-- Lista no ordenada para los enlaces del menú -->
+                   <li>
+                       <a href="index.html">Inicio</a> <!-- Enlace a la página de inicio -->                  
+                   </li>
+                   <li>
+                       <a href="#SeccionServicios">Servicios</a> <!-- Enlace a la sección de servicios -->                  
+                   </li>
+                   <li>
+                       <a href="productos.html">Prodúctos</a> <!-- Enlace a la página de productos -->                  
+                   </li>
+                   <li>
+                       <a href="https://juanvaldezecuador.com">Juan Valdez</a> <!-- Enlace externo a Juan Valdez -->                  
+                   </li>
+                   <li>
+                       <a href="#SeccionContacto">Contacto</a> <!-- Enlace a la sección de contacto -->                  
+                   </li>
+               </ul>
+           </nav>
+       </div>
+ 
+       <div class="header-content container"> <!-- Contenido de la cabecera -->
+           <h1>Café Ecuatoriano</h1> <!-- Título principal -->
+           <p> <!-- Párrafo descriptivo -->
+               El Ecuador posee una gran capacidad como productor de café, y es uno de los pocos países en
+               el mundo que exporta todas las variedades de café: Arábigo lavado, Arábigo natural y Robusta.
+           </p>
+           <a href="#" class="btn-1">Galería de Imágenes</a> <!-- Botón con enlace a la galería -->
+       </div>      
+   </header>
+ 
+   <!-- Inserción del Carrusel -->
+   <div class="carrusel-rotativo"> <!-- Contenedor para el carrusel de imágenes -->
+       <ul> <!-- Lista no ordenada para las imágenes del carrusel -->
+           <li> <img src="carrusel/imagen1.jpg" alt=""> </li> <!-- Imagen del carrusel -->
+           <li> <img src="carrusel/imagen2.jpg" alt=""> </li> <!-- Imagen del carrusel -->
+           <li> <img src="carrusel/imagen3.jpg" alt=""> </li> <!-- Imagen del carrusel -->
+           <li> <img src="carrusel/imagen4.jpg" alt=""> </li> <!-- Imagen del carrusel -->
+       </ul>
+   </div>
+ 
+   <section class="coffee"> <!-- Sección sobre el café -->
+       <img class="coffee-img" src="images/bg2.png" alt=""> <!-- Imagen de fondo para la sección -->
+       <div class="coffee-content container"> <!-- Contenedor para el contenido del café -->
+           <h2>Los diferentes tipos de Cafe</h2> <!-- Título de la sección -->
+           <p class="txt-p"> <!-- Párrafo descriptivo -->
+               Ecuador es un país con tradición en el cultivo del café tanto así
+               que es uno de los pocos países que produce dos tipos de café, el
+               Arábico y Robusta, sin embargo la producción de café ha sufrido
+               una vertiginosa caída desde los años 90 que no ha podido ser
+               recuperada hasta la fecha.
+           </p>
+ 
+           <div class="coffee-group"> <!-- Grupo de secciones de café -->
+ 
+               <div class="coffee-1"> <!-- Sección para el café Arábico -->
+                    <img src="images/c1.png" alt=""> <!-- Imagen del café Arábico -->
+                    <h3>Cafe Arábico</h3> <!-- Título del café Arábico -->
+                    <p> <!-- Descripción del café Arábico -->
+                       Lorem ipsum, dolor sit amet consectetur
+                       adipisicing elit. Obcaecati culpa, vitae,
+                       odio neque suscipit quaerat numquam
+                   </p>
+               </div>
+ 
+               <div class="coffee-1"> <!-- Sección para el café Robusta -->
+                   <img src="images/c2.png" alt=""> <!-- Imagen del café Robusta -->
+                   <h3>Cafe Robusta</h3> <!-- Título del café Robusta -->
+                   <p> <!-- Descripción del café Robusta -->
+                      Lorem ipsum, dolor sit amet consectetur
+                      adipisicing elit. Obcaecati culpa, vitae,
+                      odio neque suscipit quaerat numquam
+                   </p>
+              </div>
+ 
+              <div class="coffee-1"> <!-- Sección para otro tipo de café -->
+               <img src="images/c3.png" alt=""> <!-- Imagen de otro tipo de café -->
+               <h3>Cafe Otro</h3> <!-- Título de otro tipo de café -->
+               <p> <!-- Descripción de otro tipo de café -->
+                  Lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Obcaecati culpa, vitae,
+                  odio neque suscipit quaerat numquam
+               </p>
+               </div>
+           </div>
+ 
+       <a href="composicioncafe.html" class="btn-1">Composición del Café</a> <!-- Botón que enlaza a la composición del café -->
+       </div>
+ 
+   </section>
+ 
+   <main class="services"> <!-- Sección principal de servicios -->
+       <div id="SeccionServicios"> <!-- Contenedor para la sección de servicios -->
+       <div class="services-content container"> <!-- Contenido de la sección de servicios -->
+           <h2>Cafeteria servicios</h2> <!-- Título de la sección de servicios -->
+ 
+           <div class="services-group"> <!-- Grupo de servicios -->
+               <div class="services-1"> <!-- Sección para el servicio 1 -->
+                   <img src="images/i1.svg" alt=""> <!-- Imagen del servicio 1 -->
+                   <h3>Servicio 1</h3> <!-- Título del servicio 1 -->
+               </div>
+               <div class="services-1"> <!-- Sección para el servicio 2 -->
+                   <img src="images/i2.svg" alt=""> <!-- Imagen del servicio 2 -->
+                   <h3>Servicio 2</h3> <!-- Título del servicio 2 -->
+               </div>
+               <div class="services-1"> <!-- Sección para el servicio 3 -->
+                   <img src="images/i3.svg" alt=""> <!-- Imagen del servicio 3 -->
+                   <h3>Servicio 3</h3> <!-- Título del servicio 3 -->
+               </div>
+           </div>
+       
+       <p> <!-- Párrafo descriptivo sobre los servicios -->
+           Lorem ipsum dolor sit, amet consectetur adipisicing
+           elit. Illo nulla id laborum recusandae, at magni
+           repudiandae aut! Enim saepe, sed ipsa blanditiis
+           numquam at in nesciunt accusantium, perferendis
+           unde rem.
+       </p>
+       <a href="#" class="btn-1">Informacion</a> <!-- Botón que enlaza a más información -->
+       </div>
+   </div>    
+   </main>
+ 
+   <section class="general"> <!-- Sección general -->
+       <div class="general-1"> <!-- Primer bloque general -->
+           <h2>Enim saepe, sed ipsa blanditiis</h2> <!-- Título del bloque -->
+           <p> <!-- Párrafo descriptivo -->
+               Lorem ipsum dolor sit, amet consectetur adipisicing
+               elit. Illo nulla id laborum recusandae, at magni
+               repudiandae aut! Enim saepe, sed ipsa blanditiis
+               numquam at in nesciunt accusantium, perferendis
+               unde rem.
+           </p>
+           <a href="#" class="btn-1">Informacion</a> <!-- Botón que enlaza a más información -->
+       </div>
+ 
+       <div class="general-2"> <!-- Segundo bloque general -->    
+       </div>
+   </section>
+ 
+   <section class="general"> <!-- Otra sección general -->
+       <div class="general-3"> <!-- Tercer bloque general -->    
+       </div>
+       <div class="general-1"> <!-- Cuarto bloque general -->
+           <h2>Enim saepe, sed ipsa blanditiis</h>
+<a href="#" class="btn-1">Informacion</a>
+<!-- Enlace que funciona como botón, redirige a "#" y tiene la clase "btn-1" para estilos. -->
+</div>    
+</section>
+ 
+<section class="blog container">
+<!-- Sección para el blog, con la clase "container" para estilos. -->
+   <h2>Blog</h2>
+   <!-- Título de la sección de blog. -->
+   <p>
+       Lorem ipsum dolor sit, amet consectetur adipisicing
+   </p>
+   <!-- Párrafo de introducción al contenido del blog. -->
+   <div class="blog-content">
+   <!-- Contenedor para el contenido del blog. -->
+ 
+       <div class="blog-1">
+       <!-- Contenedor para un post del blog. -->
+           <img src="images/blog1.jpg" alt="">
+           <!-- Imagen del primer post del blog. -->
+           <h3>Blog 1</h3>
+           <!-- Título del primer post del blog. -->
+           <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing
+               elit. Illo nulla id laborum recusandae, at magni
+               repudiandae aut! Enim saepe, sed ipsa blanditiis
+               numquam at in nesciunt accusantium, perferendis
+               unde rem.
+           </p>
+           <!-- Contenido del primer post del blog. -->
+       </div>
+ 
+       <div class="blog-1">
+       <!-- Contenedor para el segundo post del blog. -->
+           <img src="images/blog2.jpg" alt="">
+           <!-- Imagen del segundo post del blog. -->
+           <h3>Blog 2</h3>
+           <!-- Título del segundo post del blog. -->
+           <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing
+               elit. Illo nulla id laborum recusandae, at magni
+               repudiandae aut! Enim saepe, sed ipsa blanditiis
+               numquam at in nesciunt accusantium, perferendis
+               unde rem.
+           </p>
+           <!-- Contenido del segundo post del blog. -->
+       </div>
+ 
+       <div class="blog-1">
+       <!-- Contenedor para el tercer post del blog. -->
+           <img src="images/blog3.jpg" alt="">
+           <!-- Imagen del tercer post del blog. -->
+           <h3>Blog 3</h3>
+           <!-- Título del tercer post del blog. -->
+           <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing
+               elit. Illo nulla id laborum recusandae, at magni
+               repudiandae aut! Enim saepe, sed ipsa blanditiis
+               numquam at in nesciunt accusantium, perferendis
+               unde rem.
+           </p>
+           <!-- Contenido del tercer post del blog. -->
+       </div>
+   </div>
+ 
+   <a href="#" class="btn-1">Informacion</a>
+   <!-- Enlace que funciona como botón, redirige a "#" y tiene la clase "btn-1" para estilos. -->
+ 
+   <h3>Chat de Whatsapp</h3>
+   <!-- Título para la sección de chat de WhatsApp. -->
+   <div>
+       <a href="https://api.whatsapp.com/send?phone=593984905374&text=Hola, quiero comprar tu prodúcto!">
+       <!-- Enlace que abre WhatsApp con un mensaje predefinido al número proporcionado. -->
+           <!--¡Envíanos un mensaje!-->
+           <img src="images/whatsapp.png" alt="">
+           <!-- Imagen del ícono de WhatsApp. -->
+       </a>
+   </div>
+   
+</section>
+ 
+<a href="galeria/c1.png" target="_blank">
+<!-- Enlace a una imagen en la galería que se abre en una nueva pestaña. -->
+   <img src="galeria/c1.png" alt="Calidad de Servicio" style="width: 300px; height: auto;">
+   <!-- Imagen de calidad de servicio, con tamaño fijo de ancho y auto para el alto. -->
+</a>
+<a href="galeria/c2.png" target="_blank">
+<!-- Enlace a otra imagen en la galería que se abre en una nueva pestaña. -->
+   <img src="galeria/c2.png" alt="Servicio Personalizado" style="width: 300px; height: auto;">
+   <!-- Imagen de servicio personalizado, con tamaño fijo de ancho y auto para el alto. -->
+</a>
+<a href="galeria/c3.png" target="_blank">
+<!-- Enlace a una tercera imagen en la galería que se abre en una nueva pestaña. -->
+   <img src="galeria/c3.png" alt="Cafeteria para Consentirte" style="width: 300px; height: auto;">
+   <!-- Imagen de cafetería, con tamaño fijo de ancho y auto para el alto. -->
+</a>
+ 
+<script>
+   lightbox.option({
+   // Configuración de la biblioteca lightbox para mostrar imágenes.
+       'resizeDuration': 200,
+       // Duración de la animación de redimensionamiento.
+       'wrapAround': true
+       // Permite navegar en el lightbox de forma cíclica.
+   });
+</script>
+ 
+<footer class="footer">
+<!-- Sección de pie de página, con la clase "footer" para estilos. -->
+   <div id ="SeccionContacto">
+   <!-- Div con un ID específico para la sección de contacto. -->
+       <div class="footer-content container">
+       <!-- Contenedor para el contenido del pie de página, con clase "container". -->
+ 
+           <div class="link">
+           <!-- Contenedor para un grupo de enlaces. -->
+               <h3>Lorem</h3>
+               <!-- Título del grupo de enlaces. -->
+               <ul>
+                   <!-- Lista de enlaces. -->
+                   <li><a href ="#">lorem</a></li>            
+                   <!-- Primer enlace de la lista. -->
+                   <li><a href ="#">lorem</a></li>            
+                   <!-- Segundo enlace de la lista. -->
+                   <li><a href ="#">lorem</a></li>            
+                   <!-- Tercer enlace de la lista. -->
+                   <li><a href ="#">lorem</a></li>            
+                   <!-- Cuarto enlace de la lista. -->
+               </ul>
+           </div>
+ 
+</div>
+</div>
+</footer>
+<!-- Fin del pie de página. -->
+</body>
+</html>
+           
