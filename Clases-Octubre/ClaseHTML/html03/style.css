@@ -477,3 +477,13 @@ p{
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Elimina el espacio inferior en imágenes */
 }
+
+.fotos {
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-items: center;
+}
