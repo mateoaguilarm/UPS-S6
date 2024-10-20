@@ -132,3 +132,92 @@ html {
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+ul {
+    margin-bottom: 1em; /* Añade espacio debajo de cada lista */
+    line-height: 1.6; /* Mejora la legibilidad aumentando el espacio entre líneas */
+}
+
+ul li {
+    margin-bottom: 0.5em; /* Espacio entre cada elemento de la lista */
+}
+
+section {
+    margin: 2em 0; /* Añade espacio arriba y abajo de cada sección */
+}
+
+h2 {
+    margin-bottom: 0.5em; /* Añade espacio debajo del título */
+}
+
+p {
+    margin-bottom: 1em; /* Añade espacio debajo de cada párrafo */
+}
+
+.carrusel-rotativo {
+    width: 100vw; /* Ocupa el ancho completo de la pantalla */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    position: relative; /* Para posicionar correctamente los elementos internos */
+    margin: 0 auto; /* Centra el carrusel en la pantalla */
+}
+
+.carrusel-rotativo ul {
+    display: flex; /* Organiza las imágenes en fila */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
+    width: 100%; /* Ocupa el ancho completo */
+    list-style: none; /* Elimina el estilo de la lista */
+    transition: transform 0.5s ease-in-out; /* Transición suave para los cambios */
+}
+
+.carrusel-rotativo li {
+    min-width: 100vw; /* Cada imagen ocupa el ancho completo de la pantalla */
+}
+
+.carrusel-rotativo img {
+    width: 100%; /* Ajusta la imagen para que ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio inferior en imágenes */
+}
+
+/* Estilo básico para el carrusel */
+.carrusel-rotativo {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.carrusel-rotativo ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-rotativo li {
+    min-width: 100%;
+}
+
+/* Estilo para los botones de navegación */
+.carrusel-rotativo .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 20px;
+}
+
+.carrusel-rotativo .prev {
+    left: 10px;
+}
+
+.carrusel-rotativo .next {
+    right: 10px;
+}

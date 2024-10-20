@@ -29,54 +29,116 @@
       </nav>
     </header>
     <section id="inicio" class="full-screen">
-        <div class="carousel">
-            <div class="carousel-item active">
-                <img src="ruta-de-tu-imagen1.jpg" alt="Descripción de la imagen 1">
-            </div>
-            <div class="carousel-item">
-                <img src="ruta-de-tu-imagen2.jpg" alt="Descripción de la imagen 2">
-            </div>
-            <div class="carousel-item">
-                <img src="ruta-de-tu-imagen3.jpg" alt="Descripción de la imagen 3">
-            </div>
-        </div>
+      <div class="carrusel-rotativo">
+        <ul>
+          <li><img src="./images/img01.png" alt="" /></li>
+          <li><img src="./images/img02.png" alt="" /></li>
+          <li><img src="./images/img03.jpg" alt="" /></li>
+        </ul>
+        <button class="nav-btn prev">&lt;</button>
+        <button class="nav-btn next">&gt;</button>
+      </div>
     </section>
 
     <section id="caracteristicas">
-      <h2>Características del Producto</h2>
-      <p>
-        Descripción general de las principales características y beneficios del
-        producto.
-      </p>
+      <h2>Características Destacadas</h2>
+      <ul>
+        <li>
+          <strong>Interfaz Intuitiva:</strong> Navega fácilmente por un flujo de
+          trabajo profesional con pistas, editores, y efectos visualmente
+          organizados.
+        </li>
+        <li>
+          <strong>Librería de Sonidos:</strong> Accede a una biblioteca enorme
+          con miles de sonidos, bucles y muestras de instrumentos.
+        </li>
+        <li>
+          <strong>Herramientas de Composición:</strong> Crea partituras,
+          secuencias MIDI y utiliza el sistema Drummer para ritmos realistas.
+        </li>
+        <li>
+          <strong>Plugins de Alta Calidad:</strong> Incluye reverbs,
+          ecualizadores y sintetizadores virtuales con calidad de estudio.
+        </li>
+        <li>
+          <strong>Compatibilidad con Dolby Atmos:</strong> Produce mezclas en
+          formato espacial con soporte integrado.
+        </li>
+      </ul>
     </section>
 
     <section id="galeria">
-      <h2>Galería de Imágenes</h2>
-      <p>Imágenes detalladas del producto desde diferentes ángulos.</p>
+      <h2>Galería de Logic Pro en Acción</h2>
+      <p>
+        Imágenes del entorno de trabajo, capturas de pantalla de la interfaz,
+        plugins en uso, y el flujo de trabajo de edición MIDI.
+      </p>
       <div class="gallery">
         <div class="gallery-item">
-            <img src="ruta-de-tu-imagen1.jpg" alt="Descripción de la imagen 1">
+          <img src="ruta-de-tu-imagen1.jpg" alt="Interfaz de Logic Pro" />
         </div>
         <div class="gallery-item">
-            <img src="ruta-de-tu-imagen2.jpg" alt="Descripción de la imagen 2">
+          <img src="ruta-de-tu-imagen2.jpg" alt="Uso de plugins en Logic Pro" />
         </div>
         <div class="gallery-item">
-            <img src="ruta-de-tu-imagen3.jpg" alt="Descripción de la imagen 3">
+          <img
+            src="ruta-de-tu-imagen3.jpg"
+            alt="Flujo de trabajo en Logic Pro"
+          />
         </div>
-    </div>
+      </div>
     </section>
 
-    <section id="testimonios">
-      <h2>Testimonios de Clientes</h2>
-      <p>Reseñas y opiniones de personas que han utilizado el producto.</p>
+    <section id="especificaciones">
+      <h2>Requisitos del Sistema y Compatibilidad</h2>
+      <ul>
+        <li>
+          <strong>Compatibilidad:</strong> Disponible para macOS Ventura 13.0 o
+          posterior.
+        </li>
+        <li>
+          <strong>Requisitos Mínimos:</strong> Procesador Intel Core i5 o Apple
+          Silicon, 4GB de RAM, 6GB de espacio de almacenamiento.
+        </li>
+        <li>
+          <strong>Optimización para M1/M2:</strong> Mejora del rendimiento y
+          procesamiento en tiempo real gracias a la arquitectura Apple Silicon.
+        </li>
+        <li>
+          <strong>Soporte para Controladores MIDI:</strong> Compatible con una
+          amplia gama de controladores y superficies de control.
+        </li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <ul>
+        <li>
+          <strong>¿Logic Pro es compatible con Windows?</strong> No, Logic Pro
+          es una aplicación exclusiva para macOS.
+        </li>
+        <li>
+          <strong>¿Se necesita equipo adicional para usar Logic Pro?</strong> No
+          es necesario, pero se recomienda un controlador MIDI y una interfaz de
+          audio para una mejor experiencia.
+        </li>
+        <li>
+          <strong>¿Cómo puedo aprender a usar Logic Pro?</strong> Ofrecemos
+          tutoriales integrados, además de una comunidad activa y recursos en
+          línea.
+        </li>
+      </ul>
     </section>
 
     <section id="contacto">
-      <h2>Contacto</h2>
+      <h2>Ponte en Contacto</h2>
       <p>
-        Formulario de contacto y detalles para obtener más información sobre el
-        producto.
+        Si tienes preguntas o necesitas soporte técnico, contáctanos a través
+        del formulario. También puedes unirte a nuestra comunidad de usuarios de
+        Logic Pro para compartir tus experiencias.
       </p>
+      <img src="ruta-de-tu-imagen-contacto.jpg" alt="Imagen de contacto" />
     </section>
 
     <script>
@@ -101,5 +163,7 @@
     >
       <img src="ruta-a-icono-whatsapp.png" alt="WhatsApp" />
     </a>
+
+    <script src="app.js"></script>
   </body>
 </html>
