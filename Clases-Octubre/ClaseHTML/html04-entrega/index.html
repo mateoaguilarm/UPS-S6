@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Producto Genérico</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Mi Producto</div>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Secciones -->
+    <section id="inicio" class="full-screen">
+      <!-- Carrusel de imágenes aquí -->
+      <!-- Poner imágenes de tu producto aquí -->
+      <div class="carousel">
+        <div class="carousel-item active">Imagen 1</div>
+        <div class="carousel-item">Imagen 2</div>
+        <div class="carousel-item">Imagen 3</div>
+      </div>
+    </section>
+
+    <section id="caracteristicas">
+      <h2>Características del Producto</h2>
+      <p>
+        Descripción general de las principales características y beneficios del
+        producto.
+      </p>
+      <!-- Poner imagen relevante aquí -->
+    </section>
+
+    <section id="galeria">
+      <h2>Galería de Imágenes</h2>
+      <p>Imágenes detalladas del producto desde diferentes ángulos.</p>
+      <!-- Espacios para más imágenes -->
+      <div class="gallery">
+        <div class="gallery-item">Imagen 1</div>
+        <div class="gallery-item">Imagen 2</div>
+        <div class="gallery-item">Imagen 3</div>
+      </div>
+    </section>
+
+    <section id="testimonios">
+      <h2>Testimonios de Clientes</h2>
+      <p>Reseñas y opiniones de personas que han utilizado el producto.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        Formulario de contacto y detalles para obtener más información sobre el
+        producto.
+      </p>
+    </section>
+
+    <!-- JavaScript para el menú responsive -->
+    <script>
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        document.querySelector(".nav-links").classList.toggle("open");
+      });
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+
+    <!-- Botón de acceso a WhatsApp -->
+    <a
+      href="https://wa.me/tuNumeroDeTelefono"
+      class="whatsapp-button"
+      target="_blank"
+    >
+      <img src="ruta-a-icono-whatsapp.png" alt="WhatsApp" />
+    </a>
+  </body>
+</html>
