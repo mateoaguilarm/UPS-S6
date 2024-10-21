@@ -18,7 +18,7 @@
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#caracteristicas">Características</a></li>
           <li><a href="#galeria">Galería</a></li>
-          <li><a href="#testimonios">FAW</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#contacto">Contácto</a></li>
         </ul>
         <div class="hamburger">
@@ -31,9 +31,30 @@
     <section id="inicio" class="full-screen">
       <div class="carrusel-rotativo">
         <ul>
-          <li><img src="./images/img01.png" alt="" /></li>
-          <li><img src="./images/img02.png" alt="" /></li>
-          <li><img src="./images/img03.jpg" alt="" /></li>
+          <li>
+            <div class="overlay"></div>
+            <img src="./images/img01.png" alt="" />
+            <div class="carousel-text">
+              <h2>Logic Pro</h2>
+              <p>El mejor DAW para edición MIDI</p>
+            </div>
+          </li>
+          <li>
+            <div class="overlay"></div>
+            <img src="./images/img02.png" alt="" />
+            <div class="carousel-text">
+              <h2>Logic Pro</h2>
+              <p>El mejor implementado en sistemas Apple</p>
+            </div>
+          </li>
+          <li>
+            <div class="overlay"></div>
+            <img src="./images/img03.jpg" alt="" />
+            <div class="carousel-text">
+              <h2>Logic Pro</h2>
+              <p>El mejor software para tu Home Studio</p>
+            </div>
+          </li>
         </ul>
         <button class="nav-btn prev">&lt;</button>
         <button class="nav-btn next">&gt;</button>
@@ -75,16 +96,16 @@
       </p>
       <div class="gallery">
         <div class="gallery-item">
-          <img src="ruta-de-tu-imagen1.jpg" alt="Interfaz de Logic Pro" />
+          <img src="./images/img04.png" alt="Interfaz de Logic Pro" />
+          <p>Interfaz</p>
         </div>
         <div class="gallery-item">
-          <img src="ruta-de-tu-imagen2.jpg" alt="Uso de plugins en Logic Pro" />
+          <img src="./images/img05.png" alt="Uso de plugins en Logic Pro" />
+          <p>Plugins</p>
         </div>
         <div class="gallery-item">
-          <img
-            src="ruta-de-tu-imagen3.jpg"
-            alt="Flujo de trabajo en Logic Pro"
-          />
+          <img src="./images/img06.png" alt="Flujo de trabajo en Logic Pro" />
+          <p>Workflow</p>
         </div>
       </div>
     </section>
@@ -138,7 +159,6 @@
         del formulario. También puedes unirte a nuestra comunidad de usuarios de
         Logic Pro para compartir tus experiencias.
       </p>
-      <img src="ruta-de-tu-imagen-contacto.jpg" alt="Imagen de contacto" />
     </section>
 
     <script>
@@ -156,13 +176,13 @@
       });
     </script>
 
-    <a
-      href="https://wa.me/tuNumeroDeTelefono"
-      class="whatsapp-button"
-      target="_blank"
-    >
-      <img src="ruta-a-icono-whatsapp.png" alt="WhatsApp" />
-    </a>
+    <div class="whatsapp-btn">
+      <a
+        href="https://api.whatsapp.com/send?phone=593994400717&text=Hola, quiero comprar tu producto!"
+      >
+        <img src="images/whatsapp.png" alt="WhatsApp" />
+      </a>
+    </div>
 
     <script src="app.js"></script>
   </body>

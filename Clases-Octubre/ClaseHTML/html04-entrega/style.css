@@ -111,6 +111,14 @@ section {
     background-color: #ddd;
     padding: 20px;
     text-align: center;
+    display: inline-block;
+}
+
+.gallery-item img {
+    width: 450px; /* Prueba con un tamaño menor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
 html {
@@ -220,4 +228,50 @@ p {
 
 .carrusel-rotativo .next {
     right: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55); /* Opacidad del 15% */
+    z-index: 1;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.carrusel-rotativo li {
+    position: relative;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 3;
+}
+
+.whatsapp-btn {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px; /* Ajusta el margen si es necesario */
+}
+
+.whatsapp-btn a img {
+    width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
 }
