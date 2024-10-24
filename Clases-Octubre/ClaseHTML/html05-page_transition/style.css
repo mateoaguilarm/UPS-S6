@@ -81,3 +81,12 @@ body {
 .inline {
     animation: show 2s;
 }
+
+img {
+    view-timeline-name: --imagenes;
+    view-timeline-axis: block;
+    animation-timeline: --imagenes;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
