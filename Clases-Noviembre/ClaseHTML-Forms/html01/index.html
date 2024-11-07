@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Regiones del Ecuador</title>
+</head>
+<body>
+    <div>
+        <form id="comboForm">
+            <label for="region">Regiones del Ecuador</label>
+            <select name="region" id="region" onchange="updateRegions()">
+                <option value="">Seleccione una región</option>
+                <option value="costa">Costa</option>
+                <option value="sierra">Sierra</option>
+                <option value="amazonia">Amazonía</option>
+                <option value="insular">Insular</option>
+            </select>
+            <label for="provincia">Ciudad</label>
+            <select name="provincia" id="provincia">
+                <option value="">Seleccione una provincia</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="./function.js"></script>
+</body>
+</html>
