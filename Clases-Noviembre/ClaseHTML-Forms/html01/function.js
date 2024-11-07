@@ -1,7 +1,7 @@
 const regionOptions = {
-    costa: ["Esmeraldas", "Manabí"],
-    sierra: ["Carchi", "Imbabura", "Pichincha"],
-    amazonia: ["Napo", "Pastaza"],
+    costa: ["Esmeraldas", "Manabí", "Santo Domingo","Guayas", "Santa Elena", "Los Ríos", "El Oro"],
+    sierra: ["Carchi", "Imbabura", "Pichincha", "Cotopaxi", "Tunguragua", "Bolívar", "Chiborazo", "Cañar", "Azuay", "Loja"],
+    amazonia: ["Sucumbios", "Napo", "Orellana", "Pastaza", "Morona Santiago", "Zamora Chinchipe"],
     insular: ["Galapagos"]
 }
 
