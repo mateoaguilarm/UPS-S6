@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Listas Desplegables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario con Listas Desplegables</h2>
+        <form id="comboForm">
+            <label for="country">País:</label>
+            <select id="country" name="country" onchange="updateCities()">
+                <option value="">Seleccione un país</option>
+                <option value="es">España</option>
+                <option value="mx">México</option>
+                <option value="us">Estados Unidos</option>
+            </select>
+
+            <label for="city">Ciudad:</label>
+            <select id="city" name="city">
+                <option value="">Seleccione una ciudad</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="funcion.js"></script>
+</body>
+</html>
