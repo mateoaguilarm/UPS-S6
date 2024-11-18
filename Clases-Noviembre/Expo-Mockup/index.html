@@ -9,28 +9,39 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#home" style="font-family: 'Montserrat', sans-serif; font-weight: 900;">Portal Musical</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">Galería</a></li>
-                <li class="nav-item"><a class="nav-link" href="#info">Información</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="index.html" style="font-family: 'Montserrat', sans-serif; font-weight: 700;">MiPortalMusical</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#gallery">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <section id="home" class="hero-section" style="background-image: url('./images/index/img01.jpg'); height: 100vh; background-size: cover; background-position: center;">
         <div class="container text-center text-white" style="padding-top: 200px;">
             <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 700;">Bienvenidos al Portal de Artículos Musicales</h1>
             <p>Explora guitarras, monitores y equipos de sonido profesionales</p>
         </div>
     </section>
-
-    <!-- Carousel Section -->
     <section id="gallery" class="container my-5">
         <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center;">Galería de Productos</h2>
         <div id="productCarousel" class="carousel slide" data-ride="carousel">
@@ -158,10 +169,8 @@
         <p>© 2024 Portal Musical | <a href="#contact" class="text-white">Contáctanos por WhatsApp</a></p>
     </footer>
 
-    <!-- Bootstrap & jQuery Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
