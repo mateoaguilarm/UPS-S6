@@ -39,15 +39,30 @@
         </nav>
     </header>
     <section style="padding-top: 100px;">
-        <h1>Contacto</h1>
-        <p>Información de contacto y formulario aquí.</p>
+        <h1 style="text-align: center;">Contacto</h1>
+        <p style="text-align: center;">Llena tu información de contácto aquí.</p>
     </section>
-    <footer>
-        <p>&copy; 2024 MiPortalMusical. Todos los derechos reservados.</p>
-    </footer>
-    <!-- Scripts de Bootstrap -->
+    <section id="contacto" class="my-5 py-5">
+        <div class="container" style="max-width: 600px;">
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label" style="font-family: 'Montserrat', sans-serif;">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label" style="font-family: 'Montserrat', sans-serif;">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label" style="font-family: 'Montserrat', sans-serif;">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100" style="font-family: 'Montserrat', sans-serif;">Enviar</button>
+            </form>
+        </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./contacto.js"></script>
 </body>
 </html>
