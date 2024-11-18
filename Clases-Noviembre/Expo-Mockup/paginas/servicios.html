@@ -7,6 +7,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./servicios.css">
 </head>
 <body>
     <header>
@@ -38,33 +39,95 @@
             </div>
         </nav>
     </header>
-  <section class="hero-section text-center">
-    <div class="container">
-      <h1 class="display-4">Nuestros Servicios</h1>
-      <p class="lead">Explora los servicios que ofrecemos a músicos y productores.</p>
-    </div>
-  </section>
-
-  <section class="container my-5">
-    <h2 class="text-center">Servicios Destacados</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <h3>Grabación</h3>
-        <p>Descripción de servicios de grabación...</p>
+    <section class="container my-5" id="services">
+      <h2 class="text-center mb-4" style="font-family: 'Montserrat', sans-serif; margin-top: 200px;">Nuestros Servicios</h2>
+      <div class="row">
+          <!-- Venta de Instrumentos -->
+          <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                  <img src="../images/servicios/img01-4.png" class="card-img-top" alt="Venta de Instrumentos">
+                  <div class="card-body">
+                      <h5 class="card-title">Venta de Instrumentos</h5>
+                      <p class="card-text">Ofrecemos una amplia gama de instrumentos musicales de calidad.</p>
+                      <button class="btn btn-primary" onclick="toggleCard(this)">Expandir</button>
+                  </div>
+                  <div class="card-content d-none">
+                      <p class="card-text">Encuentra guitarras, pianos, baterías y más. Trabajamos con marcas reconocidas para garantizar calidad y durabilidad en cada producto.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Reparación y mantenimiento de instrumentos -->
+          <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                  <img src="../images/servicios/img02.png" class="card-img-top" alt="Reparación de Instrumentos">
+                  <div class="card-body">
+                      <h5 class="card-title">Reparación de Instrumentos</h5>
+                      <p class="card-text">Servicio especializado para mantener tus instrumentos en óptimas condiciones.</p>
+                      <button class="btn btn-primary" onclick="toggleCard(this)">Expandir</button>
+                  </div>
+                  <div class="card-content d-none">
+                      <p class="card-text">Realizamos ajustes, calibraciones y reparaciones para garantizar el mejor rendimiento de tus instrumentos musicales, con un equipo de técnicos certificados.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Reparación y mantenimiento de equipos de sonido -->
+          <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                  <img src="../images/servicios/img03.png" class="card-img-top" alt="Reparación de Equipos de Sonido">
+                  <div class="card-body">
+                      <h5 class="card-title">Reparación de Equipos de Sonido</h5>
+                      <p class="card-text">Mantenemos y reparamos tus equipos de sonido profesional.</p>
+                      <button class="btn btn-primary" onclick="toggleCard(this)">Expandir</button>
+                  </div>
+                  <div class="card-content d-none">
+                      <p class="card-text">Desde altavoces hasta amplificadores, nuestro equipo técnico asegura que tus sistemas de sonido funcionen al máximo rendimiento.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Clases de Música -->
+          <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                  <img src="../images/servicios/img04.png" class="card-img-top" alt="Clases de Música">
+                  <div class="card-body">
+                      <h5 class="card-title">Clases de Música</h5>
+                      <p class="card-text">Aprende a dominar el instrumento de tu preferencia.</p>
+                      <button class="btn btn-primary" onclick="toggleCard(this)">Expandir</button>
+                  </div>
+                  <div class="card-content d-none">
+                      <p class="card-text">Impartimos clases de guitarra, piano, batería y más, para todas las edades y niveles, con profesores especializados en educación musical.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Venta de Discos -->
+          <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                  <img src="../images/servicios/img05.png" class="card-img-top" alt="Venta de Discos">
+                  <div class="card-body">
+                      <h5 class="card-title">Venta de Discos</h5>
+                      <p class="card-text">Explora nuestra colección de discos de diversos géneros.</p>
+                      <button class="btn btn-primary" onclick="toggleCard(this)">Expandir</button>
+                  </div>
+                  <div class="card-content d-none">
+                      <p class="card-text">Disponemos de una gran variedad de discos clásicos y contemporáneos, desde vinilos hasta formatos digitales, para satisfacer a cualquier amante de la música.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Salas de Ensayo -->
+          <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-sm">
+                  <img src="../images/servicios/img06.png" class="card-img-top" alt="Salas de Ensayo">
+                  <div class="card-body">
+                      <h5 class="card-title">Salas de Ensayo</h5>
+                      <p class="card-text">Espacios equipados para practicar y crear música.</p>
+                      <button class="btn btn-primary" onclick="toggleCard(this)">Expandir</button>
+                  </div>
+                  <div class="card-content d-none">
+                      <p class="card-text">Ofrecemos salas insonorizadas con equipos profesionales para bandas y artistas que buscan un lugar ideal para sus ensayos.</p>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="col-md-4">
-        <h3>Mezcla y Masterización</h3>
-        <p>Descripción de servicios de mezcla y masterización...</p>
-      </div>
-      <div class="col-md-4">
-        <h3>Producción Musical</h3>
-        <p>Descripción de servicios de producción musical...</p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-light text-center py-4">
-    <p>&copy; 2024 Compañía de Música. Todos los derechos reservados.</p>
-  </footer>
+    </section>  
+    <script src="./servicios.js"></script>
 </body>
 </html>
