@@ -1,11 +1,11 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-      e.preventDefault();
-      const targetElement = document.querySelector(this.getAttribute("href"));
-      const offsetTop = targetElement.offsetTop - 80;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth"
-      });
+document.getElementById('galeria-link').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    
+    const targetElement = document.getElementById('galleryTitle');
+    const offset = 20;
+    
+    window.scrollTo({
+      top: targetElement.offsetTop - offset,
+      behavior: 'smooth'
     });
   });

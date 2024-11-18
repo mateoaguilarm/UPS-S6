@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Artículos Musicales</title>
+    <title>GoMusic</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
@@ -11,7 +11,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="index.html" style="font-family: 'Montserrat', sans-serif; font-weight: 700;">MiPortalMusical</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/index/logo.png" alt="GoMusic Logo" style="height: 30px;"> <!-- Ajusta el tamaño según prefieras -->
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,7 +23,7 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#gallery">Galería</a>
+                        <a class="nav-link" href="#galleryTitle">Galería</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./paginas/nosotros.html">Nosotros</a>
@@ -42,8 +44,8 @@
             <p>Explora guitarras, monitores y equipos de sonido profesionales</p>
         </div>
     </section>
-    <section id="gallery" class="container my-5">
-        <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center;">Galería de Productos</h2>
+    <section id="gallery" class="container my-5 galleryClass">
+        <h2 id="galleryTitle" class="galleryText" style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center;">Galería de Productos</h2>
         <div id="productCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -75,16 +77,14 @@
             </a>
         </div>
     </section>
-
-    <!-- Information Section -->
     <section id="info" class="container my-5">
-        <h2 style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center;">Nuestros Instrumentos</h2>
+        <h2 class="infoTitle" style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center;">Nuestros Instrumentos</h2>
         <div class="row">
             <div class="col-md-6">
                 <img src="./images/index/img09.jpg" class="img-fluid" alt="Instrumento">
             </div>
             <div class="col-md-6">
-                <p>En nuestra tienda, nos enorgullecemos de ofrecer instrumentos musicales de la más alta calidad, diseñados para satisfacer las necesidades tanto de principiantes como de músicos profesionales. Contamos con una amplia variedad de guitarras acústicas, eléctricas y electroacústicas, fabricadas por marcas reconocidas a nivel mundial como Fender, Gibson, Yamaha, Ibanez, y Taylor, cada una destacando por su excepcional diseño, durabilidad y calidad de sonido. Además, ofrecemos teclados electrónicos de última generación, baterías acústicas y electrónicas de marcas líderes como Roland y Pearl, violines elaborados con maderas seleccionadas, así como bajos eléctricos y acústicos con diseños ergonómicos y gran versatilidad. Nuestro catálogo también incluye una selección de saxofones, flautas traversas, ukeleles, clarinetes y otros instrumentos de viento y cuerda de las mejores marcas, ideales para cualquier estilo musical. Garantizamos que cada uno de nuestros productos ha sido cuidadosamente seleccionado para brindar una experiencia musical única y placentera, asegurando la satisfacción de nuestros clientes con precios competitivos y un excelente servicio postventa.</p>
+                <p class="infoText">Contamos con una amplia variedad de guitarras acústicas, eléctricas y electroacústicas, fabricadas por marcas reconocidas a nivel mundial como Fender, Gibson, Yamaha, Ibanez, y Taylor, cada una destacando por su excepcional diseño, durabilidad y calidad de sonido. Además, ofrecemos teclados electrónicos de última generación, baterías acústicas y electrónicas de marcas líderes como Roland y Pearl, violines elaborados con maderas seleccionadas, así como bajos eléctricos y acústicos con diseños ergonómicos y gran versatilidad.</p>
             </div>
         </div>
     </section>

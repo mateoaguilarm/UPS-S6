@@ -1,49 +1,49 @@
-html {
-    scroll-behavior: smooth;
-}
-
-.gallery-section {
-    padding-top: 1000px;
-    margin-top: -80px;
-}
-
-/* Tipografía global */
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Navbar */
 .navbar {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Hero Section */
 .hero-section {
     background-color: #f9f9f9;
     padding: 60px 20px;
 }
 
-/* Estilos para la Galería */
-.gallery-section {
-    padding: 50px 0;
-    text-align: center;
+.galleryClass {
+    margin-top: 30px;
 }
 
-.gallery-section h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin-bottom: 30px;
+.galleryText {
+    margin-top: 20px;
 }
 
-/* Transiciones suaves para animaciones */
 html {
     scroll-behavior: smooth;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+
+.infoTitle {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.infoText {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 4px;
 }
