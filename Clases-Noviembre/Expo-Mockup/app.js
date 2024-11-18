@@ -21,3 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
+
+function openLightbox(imageSrc) {
+  const lightboxModal = document.getElementById("lightboxModal");
+  const lightboxImage = document.getElementById("lightboxImage");
+  lightboxImage.src = imageSrc;
+  lightboxModal.style.display = "block";
+}
+
+function closeLightbox() {
+  document.getElementById("lightboxModal").style.display = "none";
+}
