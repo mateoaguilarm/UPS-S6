@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Cultura General</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quien quiere ser Millonario</h1>
+        <form id="quizForm">
+            <div class="question">
+                <label for="q1">1. ¿Cuál es el país más grande del mundo?</label>
+                <select id="q1">
+                    <option value="">Selecciona una respuesta</option>
+                    <option value="0">China</option>
+                    <option value="0">Estados Unidos</option>
+                    <option value="20">Rusia</option>
+                    <option value="0">India</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q2">2. ¿Quién pintó la Mona Lisa?</label>
+                <select id="q2">
+                    <option value="">Selecciona una respuesta</option>
+                    <option value="20">Leonardo da Vinci</option>
+                    <option value="0">Vincent van Gogh</option>
+                    <option value="0">Pablo Picasso</option>
+                    <option value="0">Miguel Ángel</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q3">3. ¿En qué año llegó el hombre a la Luna?</label>
+                <select id="q3">
+                    <option value="">Selecciona una respuesta</option>
+                    <option value="0">1958</option>
+                    <option value="20">1969</option>
+                    <option value="0">1975</option>
+                    <option value="0">1981</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q4">4. ¿Cuál es el océano más grande?</label>
+                <select id="q4">
+                    <option value="">Selecciona una respuesta</option>
+                    <option value="0">Atlántico</option>
+                    <option value="20">Pacífico</option>
+                    <option value="0">Índico</option>
+                    <option value="0">Ártico</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q5">5. ¿Quién escribió "Cien años de soledad"?</label>
+                <select id="q5">
+                    <option value="">Selecciona una respuesta</option>
+                    <option value="20">Gabriel García Márquez</option>
+                    <option value="0">Mario Vargas Llosa</option>
+                    <option value="0">Jorge Luis Borges</option>
+                    <option value="0">Isabel Allende</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculateScore()">Enviar</button>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
