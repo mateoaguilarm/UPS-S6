@@ -9,11 +9,11 @@ function calculateScore() {
 
     let result;
     if (score === 100) {
-        result = "¡Medalla de Oro!";
+        result = "¡Medalla de Oro! 🥇";
     } else if (score >= 80) {
-        result = "¡Medalla de Plata!";
+        result = "¡Medalla de Plata! 🥈";
     } else if (score >= 60) {
-        result = "¡Medalla de Bronce!";
+        result = "¡Medalla de Bronce! 🥉";
     } else {
         result = "¡Has perdido! Intenta nuevamente.";
     }
